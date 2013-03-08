@@ -11,9 +11,9 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
-gem 'bootstrap-sass'
 
 group :assets do
+  gem 'bootstrap-sass',	'~> 2.3.0.1'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
