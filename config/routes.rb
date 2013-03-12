@@ -1,9 +1,14 @@
 Pintrest::Application.routes.draw do
   
-  get 'about' => 'pages#about'
-  get 'home' => 'pages#home'
+
+  resources :pins
+
+  devise_for :users
   
   root :to => 'pages#home'
+  
+  get 'home' => 'pages#home'
+  get 'about' => 'pages#about'
   
 
 

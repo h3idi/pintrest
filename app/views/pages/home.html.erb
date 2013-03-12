@@ -1,0 +1,23 @@
+<% if user_signed_in? %> 
+            <h1> You are logged in </h1>
+<% else %>
+	<div class="hero-unit">
+	<h1>
+		Pintrest
+	</h1>
+
+	<p>
+		This is a test application for
+		<%= link_to "RefineryLabs", "http://refinerylabs.com" %> first app.
+	</p>
+
+	
+	<%= link_to "Sign up now", new_user_registration_path, class: "btn btn-success btn-large" %>
+	
+
+		<p>
+		or login with  
+		<%= link_to "Facebook", "#" %>
+		</p>
+	</div>
+	<%end%>
